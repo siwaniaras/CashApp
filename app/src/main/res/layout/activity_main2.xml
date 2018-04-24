@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aras.cashapp.Main2Activity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/timlon"
+        android:layout_alignStart="@+id/timlon"
+        android:layout_below="@+id/timlon"
+        android:text="Hur mycket får du i timlön?"
+        android:textSize="15dp" />
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/timlon"
+        android:layout_width="184dp"
+        android:layout_height="45dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="146dp"
+        android:layout_marginTop="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:textSize="15dp"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:text="Hur mycket betalar du i skatt?"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/skatt"
+        android:layout_alignStart="@+id/skatt" />
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/skatt"
+        android:layout_width="186dp"
+        android:layout_height="41dp"
+        tools:layout_editor_absoluteY="54dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignRight="@+id/timlon"
+        android:layout_alignEnd="@+id/timlon" />
+
+    <Button
+        android:id="@+id/button2"
+        android:onClick="startButtonClick"
+        android:typeface="normal"
+        android:textSize="20dp"
+        android:background="#0d5300"
+        android:text="stämpelsidan"
+        android:layout_width="225dp"
+        android:layout_height="52dp"
+        tools:layout_editor_absoluteY="396dp"
+        tools:layout_editor_absoluteX="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp" />
+
+
+
+</RelativeLayout>

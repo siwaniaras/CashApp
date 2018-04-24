@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aras.cashapp.Main3Activity">
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/timmar"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:hint="timmar"
+        android:layout_alignTop="@+id/datum"
+        android:layout_toLeftOf="@+id/rast" />
+
+
+    <EditText
+        android:inputType="date"
+        android:id="@+id/datum"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="58dp"
+        android:hint="datum"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/rast"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:hint="rast"
+        android:layout_alignBottom="@+id/datum"
+        android:layout_alignRight="@+id/spara"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_marginRight="51dp"
+        android:layout_marginEnd="51dp"
+        android:layout_alignTop="@+id/datum" />
+
+    <Button
+        android:id="@+id/spara"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/rast"
+        android:layout_alignBottom="@+id/rast"
+        android:layout_toEndOf="@+id/rast"
+        android:layout_toRightOf="@+id/rast"
+        android:background="#0d5300"
+        android:onClick="onButtonClick"
+        android:text="spara" />
+
+    <TextView
+        android:id="@+id/total"
+        android:text="Totala timmar"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+
+        android:layout_above="@+id/button3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:onClick="startButtonClick"
+        android:layout_width="225dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:background="#0d5300"
+        android:text="Räkna ut ditt lönespecifikation"
+        android:textSize="20dp"
+        android:typeface="normal"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="396dp"
+        />
+
+    <ListView
+        android:layout_below="@+id/datum"
+        android:layout_above="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list"
+        android:layout_toLeftOf="@+id/spara"
+        android:layout_toStartOf="@+id/spara" />
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aras.cashapp.MainActivity">
+
+    <ImageView
+        android:layout_width="302dp"
+        android:layout_height="229dp"
+        android:src="@drawable/icon_cash"
+        tools:layout_editor_absoluteY="41dp"
+        tools:layout_editor_absoluteX="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <Button
+        android:background="#0d5300"
+        android:onClick="startButtonClick"
+        android:id="@+id/button"
+        android:layout_width="184dp"
+        android:layout_height="51dp"
+        android:typeface="normal"
+        android:textSize="20dp"
+        android:text="CashApp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.754"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp" />
+
+</RelativeLayout>
